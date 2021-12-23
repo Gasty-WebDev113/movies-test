@@ -1,11 +1,14 @@
 .movies-list {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sort-list {
+  margin: 20px 0 20px 0;
 }
 
 .movies-list > .items {
-  width: 20%;
 }
 
 .expanded-movie-item {
@@ -25,8 +28,41 @@
 
 .movie-list-item {
   cursor: pointer;
+  margin: 10px 5px 10px 5px;
+}
+
+.movie-list-item:hover {
+  transform: scale(1.25);
+  position: relative;
+}
+
+.movie-list-item > img {
+  height: 200px;
+  width: 150px;
+  border-radius: 10px;
 }
 
 .movie-list-item.selected {
   text-decoration: underline;
+}
+
+.movie-list-item .description{
+  display: none;
+}
+
+.movie-list-item .description:hover{
+  background: red;
+  display: block;
+}
+
+.row-list {
+  display: flex;
+  width: 95%;
+  overflow-x: scroll;
+  margin: auto;
+  padding: 40px 0px;
+}
+
+.row-list::-webkit-scrollbar {
+  display: none;
 }

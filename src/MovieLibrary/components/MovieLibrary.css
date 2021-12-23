@@ -2,20 +2,15 @@
   text-align: center;
 }
 
-.ML-logo {
-  animation: ML-logo-spin infinite 8s ease;
-  height: 80px;
-}
-
 .ML-header {
   background-color: #222;
-  height: 150px;
   padding: 20px;
   color: white;
 }
 
 .ML-title {
-  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 
 .ML-intro {
